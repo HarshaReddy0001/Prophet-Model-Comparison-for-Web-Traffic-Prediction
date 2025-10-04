@@ -28,15 +28,15 @@ The goal of this project is to accurately forecast daily page views for a specif
 
 The project follows these key steps for forecasting Wikipedia page views:
 
-1.  **Data Loading and Preparation:** Load the daily page view data from the `example_wp_log_peyton_manning.csv` file into a pandas DataFrame. Ensure the 'ds' column is in datetime format and the 'y' column (log of page views) is in a suitable numerical format.
-2.  **Model Experimentation with Prophet:** Implement and experiment with different configurations of the Prophet model to capture various aspects of the time series:
+1.  **Data Loading and Preparation:**     https://raw.githubusercontent.com/facebook/prophet/main/examples/example_wp_log_peyton_manning.csv ( online csv file cannot download) Load the daily page view data from the `example_wp_log_peyton_manning.csv` file into a pandas DataFrame. Ensure the 'ds' column is in datetime format and the 'y' column (log of page views) is in a suitable numerical format.
+4.  **Model Experimentation with Prophet:** Implement and experiment with different configurations of the Prophet model to capture various aspects of the time series:
     *   Applying logistic growth to model potential saturation in page views.
     *   Adding custom seasonalities or utilizing built-in seasonalities (weekly, yearly) to capture recurring patterns.
     *   Tuning parameters related to trend changepoints (`n_changepoints`, `changepoint_prior_scale`) to better fit shifts in the long-term trend.
     *   Incorporating relevant holidays (like playoffs and superbowls as shown in the notebook) that might influence page views.
-3.  **Forecasting Future Page Views:** Generate a future DataFrame with dates extending beyond the historical data. Use the trained Prophet models to predict page views for these future dates.
-4.  **Model Evaluation:** Assess the performance of each model configuration by comparing the predicted values (`yhat`) to the actual historical 'y' values where available, and using metrics such as Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), and R-squared.
-5.  **Visualization:** Plot the historical data alongside the forecasted values to visually inspect the model's fit and predictive capabilities. Visualize model components (trend, seasonality, holidays) to understand their influence on the forecast.
+5.  **Forecasting Future Page Views:** Generate a future DataFrame with dates extending beyond the historical data. Use the trained Prophet models to predict page views for these future dates.
+6.  **Model Evaluation:** Assess the performance of each model configuration by comparing the predicted values (`yhat`) to the actual historical 'y' values where available, and using metrics such as Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), and R-squared.
+7.  **Visualization:** Plot the historical data alongside the forecasted values to visually inspect the model's fit and predictive capabilities. Visualize model components (trend, seasonality, holidays) to understand their influence on the forecast.
 
 **Results / Conclusion**
 After training and evaluating the three different Prophet models on the Wikipedia page view dataset, the following performance metrics were obtained:
