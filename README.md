@@ -76,6 +76,6 @@ Accurate forecasting of web traffic, even for something like Wikipedia page view
 
 Feel free to connect with me for questions, feedback, or collaboration:
 
-*   **GitHub:** [Your GitHub Username]
-*   **LinkedIn:** [Your LinkedIn Profile URL]
-*   **Email:** [Your Email Address]
+*   **GitHub:** Harsha0001
+*   **LinkedIn:** www.linkedin.com/in/harshavardhanrg
+*   **Email:** harshavardhaan.rg@gmail.com
